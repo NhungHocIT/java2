@@ -4,6 +4,8 @@
  */
 package javaapplication10;
 
+import java.util.Scanner;
+
 /**
  *
  * @author FPT
@@ -15,7 +17,15 @@ public class JavaApplication10 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Nhung ne!!");
+ 
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Nhap tuoi: ");
+        int age = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("nhap ten: ");
+        String name = scanner.nextLine();
+        scanner.close();
+        
     }
     
 }
